@@ -11,5 +11,7 @@ Var
 Inicio
 // Seção de Comandos, procedimento, funções, operadores, etc... 
   escreva("ola mundo")
+  
+  escreva("esse projeto é muito facil")
 
 Fimalgoritmo
