@@ -114,7 +114,7 @@ Inicio
    escreval("")
    para i de 0 ate 14 passo 1 faca
       se(locado[i] = 1)entao
-         escreval(i ," -Kart modelo: ",modelo[i],".")
+         escreval(i + 1 ," -Kart modelo: ",modelo[i],".")
          escreval("Valor de locação: ",valorLoc[i]," reais.")
          escreval("Já foi locado: ",quantLoc[i]," vezes.")
          escreval("----------------------------")
@@ -137,7 +137,7 @@ Inicio
    para i de 0 ate 14 passo 1 faca
       se(naoLocado[i] = 2)entao
          escreval("----------------------------")
-         escreval(i,"-Kart modelo: ",modelo[i],".")
+         escreval(i + 1,"-Kart modelo: ",modelo[i],".")
          escreval("----------------------------")
       fimse
    fimpara
@@ -155,6 +155,7 @@ Inicio
       escreval("Escolha algum kart da lista de karts disponiveis")
       escreval(kartDis)
       leia(numero)
+      numero <- numero - 1
 
    se(locado[numero] = 1) entao
       locado[numero] <- 2
@@ -176,6 +177,7 @@ Inicio
       escreval("Qual o numero do kart que quer devolver?")
       escreval(kartInd)
       leia(numero)
+      numero <- numero - 1
    ate (numero < 15)
    se(naoLocado[numero] = 2)entao
       naoLocado[numero] <- 1
