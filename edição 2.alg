@@ -10,7 +10,8 @@ Var
    naoLocado:vetor[0..14] de inteiro
    locacaoDeCircuito:vetor[1..1] de inteiro
    naoLocacaoDeCircuito:vetor[1..1] de inteiro
-
+   quantidade:inteiro
+   posi:vetor[0..14] de inteiro
 Funcao menu:inteiro
 
 Var
@@ -60,7 +61,7 @@ Fimfuncao
 Funcao cadastro:inteiro
 
 Var
-   i,quantidade,aluguel,retorno:inteiro
+   i,aluguel,retorno:inteiro
 Inicio
    escreval("O número máximo de karts que podem ser locados são 15.")
 
@@ -73,7 +74,7 @@ Inicio
 
    para i de 0 ate quantidade passo 1 faca
       enquanto (modelo[i] = "") faca
-         escreval("Qual o modelo do kart?")
+         escreval("Qual o modelo do kart ", i+1 ," ?")
          leia(modelo[i])
       fimenquanto
 
@@ -93,7 +94,9 @@ Inicio
 
          se(locado[i] = 1)entao
             locado[i] <- 1
-         senao
+            posi[i] <- i
+         fimse
+         se (locado[i] = 2) entao
             naoLocado[i] <- 2
          fimse
       ate (locado[i] = 1) ou (locado[i]= 2)
@@ -114,7 +117,7 @@ Inicio
    escreval("")
    para i de 0 ate 14 passo 1 faca
       se(locado[i] = 1)entao
-         escreval(i + 1 ," -Kart modelo: ",modelo[i],".")
+         escreval(i + 1," -Kart modelo: ",modelo[i],".")
          escreval("Valor de locação: ",valorLoc[i]," reais.")
          escreval("Já foi locado: ",quantLoc[i]," vezes.")
          escreval("----------------------------")
@@ -147,20 +150,25 @@ Fimfuncao
 Funcao aluguel:inteiro
 
 Var
-   numero,retorno:inteiro
+   numero,retorno,i:inteiro
 Inicio
    escreval("------------------------------------------------------------")
    escreval("")
-
+   repita
+   enquanto (i = " ")  faca
       escreval("Escolha algum kart da lista de karts disponiveis")
       escreval(kartDis)
-      leia(numero)
-      numero <- numero - 1
+      leia(i)
+   fimenquanto
+   
+      i <- i - 1
+   ate (i = posi[i])
 
-   se(locado[numero] = 1) entao
-      locado[numero] <- 2
-      naoLocado[numero] <- 2
-      quantLoc[numero] <- quantLoc[numero] + 1
+
+   se(locado[i] = 1) entao
+      locado[i] <- 2
+      naoLocado[i] <- 2
+      quantLoc[i] <- quantLoc[i] + 1
       escreval("Parabéns você alugou este kart.")
    fimse
 
@@ -176,12 +184,11 @@ Inicio
    repita
       escreval("Qual o numero do kart que quer devolver?")
       escreval(kartInd)
-      leia(numero)
-      numero <- numero - 1
-   ate (numero < 15)
-   se(naoLocado[numero] = 2)entao
-      naoLocado[numero] <- 1
-      locado[numero] <- 1
+      leia(i)
+   ate (i < 15)
+   se(naoLocado[i] = 2)entao
+      naoLocado[i] <- 1
+      locado[i] <- 1
       escreval("Seu kart foi devolvido com sucesso.")
    fimse
 
