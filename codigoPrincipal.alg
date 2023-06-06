@@ -1,5 +1,5 @@
-Algoritmo "Locadora de Kard"
-// Projeto final : Locadora de Kard
+Algoritmo "Locadora de Kart"
+// Projeto final : Locadora de Kart
 // Professor: Gilberto V. Oliveira
 
 Var
