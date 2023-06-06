@@ -1,6 +1,6 @@
-Algoritmo "semnome"
-// Disciplina   : [Linguagem e Lógica de Programação]
-// Professor   : Antonio Carlos Nicolodi
+Algoritmo "Locadora de Kard"
+// Projeto final : Locadora de Kard
+// Professor: Gilberto V. Oliveira
 
 Var
    modelo:vetor[0..14]de caractere
