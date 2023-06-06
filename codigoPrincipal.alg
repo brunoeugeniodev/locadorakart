@@ -1,7 +1,7 @@
 Algoritmo "semnome"
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi
-
+// teste laila
 Var
    modelo:vetor[0..14]de caractere
    valorLoc:vetor[0..14]de inteiro
