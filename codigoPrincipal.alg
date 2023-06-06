@@ -1,5 +1,5 @@
 Algoritmo "semnome"
-// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
+// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
 // Professor   : Antonio Carlos Nicolodi
 
 Var
@@ -22,13 +22,13 @@ Inicio
    repita
       escreval
       escreval("1.Cadastrar um Kart")
-      escreval("2. Listar Karts disponÌveis")
+      escreval("2. Listar Karts dispon√≠veis")
       escreval("3. Listar Karts locados")
       escreval("4. Alugar um Kart")
       escreval("5. Devolver um Kart")
       escreval("6. Kart que mais gerou ganhos")
       escreval("7. Receita e lucro do dia, considerando karts locados")
-      escreval("8. LocaÁ„o de circuito")
+      escreval("8. Loca√ß√£o de circuito")
       escreval("9. Atualizar dia")
       escreval("10. Sair do programa")
       leia(opcao)
@@ -63,7 +63,7 @@ Funcao cadastro:inteiro
 Var
    i,aluguel,retorno:inteiro
 Inicio
-   escreval("O n˙mero m·ximo de karts que podem ser locados s„o 15.")
+   escreval("O n√∫mero m√°ximo de karts que podem ser locados s√£o 15.")
 
    repita
       escreval("Quantos karts voce quer cadastrar? ")
@@ -79,7 +79,7 @@ Inicio
       fimenquanto
 
       repita
-         escreval("Qual o valor de locaÁ„o?")
+         escreval("Qual o valor de loca√ß√£o?")
          leia(valorLoc[i])
       ate (valorLoc[i] > 0)
 
@@ -89,7 +89,7 @@ Inicio
       ate (quantLoc[i] > -1)
 
       repita
-         escreval("Este kart j· est· alugado? 1.N„o 2.Sim")
+         escreval("Este kart j√° est√° alugado? 1.N√£o 2.Sim")
          leia(locado[i])
 
          se(locado[i] = 1)entao
@@ -118,8 +118,8 @@ Inicio
    para i de 0 ate 14 passo 1 faca
       se(locado[i] = 1)entao
          escreval(i + 1," -Kart modelo: ",modelo[i],".")
-         escreval("Valor de locaÁ„o: ",valorLoc[i]," reais.")
-         escreval("J· foi locado: ",quantLoc[i]," vezes.")
+         escreval("Valor de loca√ß√£o: ",valorLoc[i]," reais.")
+         escreval("J√° foi locado: ",quantLoc[i]," vezes.")
          escreval("----------------------------")
       senao
       fimse
@@ -169,7 +169,7 @@ Inicio
       locado[i] <- 2
       naoLocado[i] <- 2
       quantLoc[i] <- quantLoc[i] + 1
-      escreval("ParabÈns vocÍ alugou este kart.")
+      escreval("Parab√©ns voc√™ alugou este kart.")
    fimse
 
 Fimfuncao
@@ -231,7 +231,7 @@ Inicio
    fimpara
    luc <- 30 * total
    luc <- luc / 100
-   escreval("O valor da receita È de:",total,"reais")
+   escreval("O valor da receita √© de:",total,"reais")
    escreval("")
    escreval("O lucro do dia foi de:",luc,"reais")
    retorne soma
