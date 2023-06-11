@@ -21,7 +21,7 @@ Var
 Inicio
    repita
       escreval
-      escreval("1.Cadastrar um Kart")
+      escreval("1.  Cadastrar um Kart")
       escreval("2. Listar Karts disponíveis")
       escreval("3. Listar Karts locados")
       escreval("4. Alugar um Kart")
