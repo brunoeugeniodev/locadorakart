@@ -237,6 +237,37 @@ Inicio
    retorne soma
 Fimfuncao
 
+Funcao pista: inteiro
+Var
+i,cc,Lcircuito,bat, tre,hr: inteiro
+Inicio
+//locacaoDeCircuito
+escreval("Marque o circuito desejado")
+escreval("1- Baterias valor de R$ 100 reais a cada 20 min - 13 hrs a 18 hrs")
+escreval("2- Treino valor de R$ 250 reais a hora - 8 hrs a 11 hrs")
+leia(cc)
+    //para i de 0 ate 14 faca  
+        se (cc < 1) ou (cc > 2) entao
+             escreval("Digite uma opção válida")
+        fimse
+        se cc = 1 entao
+             repita
+                escreval("Digite quantas baterias deseja realizar")
+                leia(bat)
+                Lcircuito <- 100 * bat
+             ate (bat > 0)
+        fimse
+        se cc = 2 entao
+             repita
+                escreval("Digite quantos treinos deseja realizar")
+                leia(tre)
+                Lcircuito <- 250 * tre
+             ate (tre > 0)
+        fimse
+        escreval("Lucro: ", Lcircuito)
+   //fimpara
+Fimfuncao
+
 Inicio
    escreval(menu)
 
