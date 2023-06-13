@@ -8,8 +8,7 @@ Var
    quantLoc:vetor[0..14] de inteiro
    locado:vetor[0..14] de inteiro
    naoLocado:vetor[0..14] de inteiro
-   locacaoDeCircuito:vetor[1..1] de inteiro
-   naoLocacaoDeCircuito:vetor[1..1] de inteiro
+   locacaoDeCircuito:vetor[1..1] de real
    quantidade:inteiro
    posi:vetor[0..14] de inteiro
 Funcao menu:inteiro
@@ -48,7 +47,7 @@ Inicio
       caso 7
          resce <- receitaeLucro
       caso 8
-         res <- pista
+         resce <- pista
       caso 9
          res <- atualiza
          caso10
@@ -218,9 +217,10 @@ Fimfuncao
 Funcao receitaeLucro:real
 
 Var
-   i,total,multiplicacao:inteiro
-   luc, soma:real
+   i,multiplicacao:inteiro
+   luc, total, Lcircuito, soma:real
 Inicio
+   Lcircuito <- locacaoDeCircuito[1] * 0,7
    multiplicacao <- 0
    total <- 0
    para i de 0 ate 14 faca
@@ -229,17 +229,18 @@ Inicio
          total <- total + multiplicacao
       fimse
    fimpara
-   luc <- 30 * total
+   luc <- (30 * total)
    luc <- luc / 100
+   total<- total + Lcircuito
    escreval("O valor da receita é de:",total,"reais")
    escreval("")
    escreval("O lucro do dia foi de:",luc,"reais")
    retorne soma
 Fimfuncao
 
-Funcao pista: inteiro
+Funcao pista: real
 Var
-i,vp,cc: inteiro
+vp,cc: inteiro
 Inicio
 //locacaoDeCircuito
 
