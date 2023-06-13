@@ -3,7 +3,7 @@ Algoritmo "semnome"
 //
 //
 //
-// Disciplina   : [Linguagem e LÛgica de ProgramaÁ„o]
+// Disciplina   : [Linguagem e L√≥gica de Programa√ß√£o]
 // Professor   : Antonio Carlos Nicolodi
 
 Var
@@ -17,15 +17,35 @@ Var
    quantidade:inteiro
    posi:vetor[0..14] de inteiro
 
-funcao verificacao(i:inteiro) : inteiro
+funcao verificacaoL(i:inteiro) : inteiro
+
+var
+   res:inteiro
 
 inicio
    se (i < 0) entao
       res <- aluguel
    senao
+      se (i > 14) entao
+         res <- aluguel
+      fimse
    fimse
 fimfuncao
 
+funcao verificacaoD(i:inteiro) : inteiro
+
+var
+   res:inteiro
+
+inicio
+   se (i < 0) entao
+      res <- devolucao
+   senao
+      se (i > 14) entao
+         res <- devolucao
+      fimse
+   fimse
+fimfuncao
 
 Funcao menu:inteiro
 
@@ -37,13 +57,13 @@ Inicio
    repita
       escreval
       escreval("1.Cadastrar um Kart")
-      escreval("2. Listar Karts disponÌveis")
+      escreval("2. Listar Karts dispon√≠veis")
       escreval("3. Listar Karts locados")
       escreval("4. Alugar um Kart")
       escreval("5. Devolver um Kart")
       escreval("6. Kart que mais gerou ganhos")
       escreval("7. Receita e lucro do dia, considerando karts locados")
-      escreval("8. LocaÁ„o de circuito")
+      escreval("8. Loca√ß√£o de circuito")
       escreval("9. Atualizar dia")
       escreval("10. Sair do programa")
       leia(opcao)
@@ -78,7 +98,7 @@ Funcao cadastro:inteiro
 Var
    i,aluguel,retorno:inteiro
 Inicio
-   escreval("O n˙mero m·ximo de karts que podem ser locados s„o 15.")
+   escreval("O n√∫mero m√°ximo de karts que podem ser locados s√£o 15.")
    escreval("")
    repita
       escreval("Quantos karts voce quer cadastrar? ")
@@ -94,7 +114,7 @@ Inicio
       fimenquanto
 
       repita
-         escreval("Qual o valor de locaÁ„o?")
+         escreval("Qual o valor de loca√ß√£o?")
          leia(valorLoc[i])
       ate (valorLoc[i] > 0)
 
@@ -104,7 +124,7 @@ Inicio
       ate (quantLoc[i] > -1)
 
       repita
-         escreval("Este kart j· est· alugado? 1.N„o 2.Sim")
+         escreval("Este kart j√° est√° alugado? 1.N√£o 2.Sim")
          leia(locado[i])
 
          se(locado[i] = 1)entao
@@ -133,8 +153,8 @@ Inicio
    para i de 0 ate 14 passo 1 faca
       se(locado[i] = 1)entao
          escreval(i + 1," -Kart modelo: ",modelo[i],".")
-         escreval("Valor de locaÁ„o: ",valorLoc[i]," reais.")
-         escreval("J· foi locado: ",quantLoc[i]," vezes.")
+         escreval("Valor de loca√ß√£o: ",valorLoc[i]," reais.")
+         escreval("J√° foi locado: ",quantLoc[i]," vezes.")
          escreval("----------------------------")
       senao
       fimse
@@ -169,25 +189,16 @@ Var
 Inicio
    escreval("------------------------------------------------------------")
    escreval("")
-
-   repita
-      enquanto (i <= 0) ou (i > 14) faca
-         escreval("Escolha algum kart da lista de karts disponiveis")
-         escreval(kartDis)
-         leia(i)
-         i <- i - 1
-      fimenquanto
-      res <- verificacao(i)
-
-   ate (naoLocado[i] = 2)
-
-
-
+   escreval("Escolha algum kart da lista de karts disponiveis")
+   escreval(kartDis)
+   leia(i)
+   i <- i - 1
+   res <- verificacaol(i)
    se(locado[i] = 1) entao
       locado[i] <- 2
       naoLocado[i] <- 2
       quantLoc[i] <- quantLoc[i] + 1
-      escreval("ParabÈns vocÍ alugou este kart.")
+      escreval("Parab√©ns voc√™ alugou este kart.")
    fimse
 
 Fimfuncao
@@ -195,15 +206,15 @@ Fimfuncao
 Funcao devolucao:inteiro
 
 Var
-   i,numero,retorno:inteiro
+   res, i,numero,retorno:inteiro
 Inicio
    escreval("------------------------------------------------------------")
    escreval("")
-   repita
-      escreval("Qual o numero do kart que quer devolver?")
-      escreval(kartInd)
-      leia(i)
-   ate (i < 15)
+   escreval("Qual o numero do kart que quer devolver?")
+   escreval(kartInd)
+   leia(i)
+   i <- i - 1
+   res <- verificacaoD(i)
    se(naoLocado[i] = 2)entao
       naoLocado[i] <- 1
       locado[i] <- 1
@@ -249,7 +260,7 @@ Inicio
    fimpara
    luc <- 30 * total
    luc <- luc / 100
-   escreval("O valor da receita È de:",total,"reais")
+   escreval("O valor da receita √© de:",total,"reais")
    escreval("")
    escreval("O lucro do dia foi de:",luc,"reais")
    retorne soma
