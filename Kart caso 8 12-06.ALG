@@ -21,13 +21,13 @@ Inicio
    repita
       escreval
       escreval("1.  Cadastrar um Kart")
-      escreval("2. Listar Karts disponíveis")
+      escreval("2. Listar Karts disponÃ­veis")
       escreval("3. Listar Karts locados")
       escreval("4. Alugar um Kart")
       escreval("5. Devolver um Kart")
       escreval("6. Kart que mais gerou ganhos")
       escreval("7. Receita e lucro do dia, considerando karts locados")
-      escreval("8. Locação de circuito")
+      escreval("8. LocaÃ§Ã£o de circuito")
       escreval("9. Atualizar dia")
       escreval("10. Sair do programa")
       leia(opcao)
@@ -62,7 +62,7 @@ Funcao cadastro:inteiro
 Var
    i,aluguel,retorno:inteiro
 Inicio
-   escreval("O número máximo de karts que podem ser locados são 15.")
+   escreval("O nÃºmero mÃ¡ximo de karts que podem ser locados sÃ£o 15.")
 
    repita
       escreval("Quantos karts voce quer cadastrar? ")
@@ -78,7 +78,7 @@ Inicio
       fimenquanto
 
       repita
-         escreval("Qual o valor de locação?")
+         escreval("Qual o valor de locaÃ§Ã£o?")
          leia(valorLoc[i])
       ate (valorLoc[i] > 0)
 
@@ -88,7 +88,7 @@ Inicio
       ate (quantLoc[i] > -1)
 
       repita
-         escreval("Este kart já está alugado? 1.Não 2.Sim")
+         escreval("Este kart jÃ¡ estÃ¡ alugado? 1.NÃ£o 2.Sim")
          leia(locado[i])
 
          se(locado[i] = 1)entao
@@ -117,8 +117,8 @@ Inicio
    para i de 0 ate 14 passo 1 faca
       se(locado[i] = 1)entao
          escreval(i + 1," -Kart modelo: ",modelo[i],".")
-         escreval("Valor de locação: ",valorLoc[i]," reais.")
-         escreval("Já foi locado: ",quantLoc[i]," vezes.")
+         escreval("Valor de locaÃ§Ã£o: ",valorLoc[i]," reais.")
+         escreval("JÃ¡ foi locado: ",quantLoc[i]," vezes.")
          escreval("----------------------------")
       senao
       fimse
@@ -168,7 +168,7 @@ Inicio
       locado[i] <- 2
       naoLocado[i] <- 2
       quantLoc[i] <- quantLoc[i] + 1
-      escreval("Parabéns você alugou este kart.")
+      escreval("ParabÃ©ns vocÃª alugou este kart.")
    fimse
 
 Fimfuncao
@@ -220,7 +220,8 @@ Var
    i,multiplicacao:inteiro
    luc, total, Lcircuito, soma:real
 Inicio
-   Lcircuito <- locacaoDeCircuito[1] * 0,7
+   Lcircuito <- locacaoDeCircuito[1] 
+   Lcircuito <- Lcircuito * 0.7
    multiplicacao <- 0
    total <- 0
    para i de 0 ate 14 faca
@@ -232,7 +233,7 @@ Inicio
    luc <- (30 * total)
    luc <- luc / 100
    total<- total + Lcircuito
-   escreval("O valor da receita é de:",total,"reais")
+   escreval("O valor da receita Ã© de:",total,"reais")
    escreval("")
    escreval("O lucro do dia foi de:",luc,"reais")
    retorne soma
@@ -246,15 +247,13 @@ Inicio
 
 escreval("Informe o valor da pista")
 leia(vp)
-escreval("Deseja alugar um circuito? 1-Sim/ 2-N�o")
+escreval("Deseja alugar um circuito? 1-Sim/ 2-Não")
 leia(cc)
         se (cc < 1) ou (cc > 2) entao
-             escreval("Digite uma opção válida")
+             escreval("Digite uma opÃ§Ã£o vÃ¡lida")
         fimse
             se cc = 1 entao
-
                 locacaoDeCircuito[1] <- 1
-
             fimse
             se cc = 2 entao
                 locacaoDeCircuito[1] <- 0
@@ -262,7 +261,6 @@ leia(cc)
            se (locacaoDeCircuito[1] = 1) entao
                locacaoDeCircuito[1] <- vp
            fimse
-
         escreval("Lucro: ", locacaoDeCircuito[1])
 Fimfuncao
 
