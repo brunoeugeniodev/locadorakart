@@ -1,4 +1,8 @@
 Algoritmo "semnome"
+//
+//
+//
+//
 // Disciplina   : [Linguagem e Lógica de Programação]
 // Professor   : Antonio Carlos Nicolodi
 
@@ -12,6 +16,16 @@ Var
    naoLocacaoDeCircuito:vetor[1..1] de inteiro
    quantidade:inteiro
    posi:vetor[0..14] de inteiro
+
+funcao verificacao(i:inteiro) : inteiro
+
+inicio
+   se (i < 0) entao
+      res <- aluguel
+   senao
+   fimse
+fimfuncao
+
 
 Funcao menu:inteiro
 
@@ -151,10 +165,11 @@ Fimfuncao
 Funcao aluguel:inteiro
 
 Var
-   numero,retorno,i:inteiro
+   res,retorno,i,n:inteiro
 Inicio
    escreval("------------------------------------------------------------")
    escreval("")
+
    repita
       enquanto (i <= 0) ou (i > 14) faca
          escreval("Escolha algum kart da lista de karts disponiveis")
@@ -162,11 +177,10 @@ Inicio
          leia(i)
          i <- i - 1
       fimenquanto
-      escreval("Escolha algum kart da lista de karts disponiveis")
-      escreval(kartDis)
-      leia(i)
-      i <- i - 1
-   ate (i = posi[i])
+      res <- verificacao(i)
+
+   ate (naoLocado[i] = 2)
+
 
 
    se(locado[i] = 1) entao
@@ -181,7 +195,7 @@ Fimfuncao
 Funcao devolucao:inteiro
 
 Var
-   numero,retorno:inteiro
+   i,numero,retorno:inteiro
 Inicio
    escreval("------------------------------------------------------------")
    escreval("")
