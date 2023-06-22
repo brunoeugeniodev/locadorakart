@@ -1,4 +1,4 @@
-# Locadora Racing Kart Brasil 🚙🏁
+# Locadora Racing Kart Brasil 🚙🏁📍🚩
 
 ![alt text](https://th.bing.com/th/id/OIP.egJsRDKEQN56kEzuCvDqIQHaE7?pid=ImgDet&rs=1)
 
