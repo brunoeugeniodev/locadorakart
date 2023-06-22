@@ -1,6 +1,6 @@
 # Projeto da Star Development: Locadora Racing Kart Brasil
 
-![Alt ou título da imagem](https://clipground.com/images/go-kart-png-10.jpg {width=50px height=50px})
+![Alt ou título da imagem](https://th.bing.com/th/id/OIP.egJsRDKEQN56kEzuCvDqIQHaE7?pid=ImgDet&rs=1)
 
 ## Por que do projeto?
 
