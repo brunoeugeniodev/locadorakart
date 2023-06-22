@@ -1,4 +1,4 @@
-![image](https://github.com/brunoeugeniodev/locadorakart/assets/68867449/169c38f0-d82c-4b49-92b8-1170f22d485a)# Projeto da Star Development: Locadora Racing Kart Brasil
+# Projeto da Star Development: Locadora Racing Kart Brasil
 
 ![Alt ou título da imagem](https://clipground.com/images/go-kart-png-10.jpg)
 
