@@ -1,6 +1,6 @@
 # Projeto da Star Development: Locadora Racing Kart Brasil
 
-![Alt ou título da imagem](https://th.bing.com/th/id/OIP.egJsRDKEQN56kEzuCvDqIQHaE7?pid=ImgDet&rs=1)
+![fghgfsdgfgs](https://th.bing.com/th/id/OIP.egJsRDKEQN56kEzuCvDqIQHaE7?pid=ImgDet&rs=1)
 
 ## Por que do projeto?
 
