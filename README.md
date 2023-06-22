@@ -16,7 +16,7 @@ Clique a seguir para acessar o código-fonte: (www.youtube.com)
 ## Quem somos?
 
 A Star Development iniciou-se no âmbito universitário com seis colegas que queriam mudar o mundo de alguma forma: sentados em frente uma tela programando. Logo, juntando o brilho de todos, formamos uma estrela de seis pontas — embora hoje a Star Development conta com mais de inúmeros funcionários, ou seja, diversas outras estrelas que nos auxiliam nessa jornada.
-Desenvolvemos aplicações que transitam em diferentes escopos, como, por exemplo, a Locadora Racing Kart Brasil.
+Desenvolvemos aplicações que transitam em diferentes escopos, como, por exemplo, a **Locadora Racing Kart Brasil**.
 
 ## Funcionalidades da Racing Kart Brasil
 
