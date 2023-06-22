@@ -1,4 +1,4 @@
-# Projeto da Star Development: Locadora Racing Kart Brasil 🚙🏁
+#Locadora Racing Kart Brasil 🚙🏁
 
 ## Por que do projeto?
 
@@ -8,9 +8,18 @@ Após alguns meses da implementação do projeto, realizamos uma reunião om os 
 
 Para visualizar uma parte do código-fonte do programa em questão, sem interface gráfica, clique no link a seguir:
 
-### Funcionalidades básicas da Racing Kart Brasil: 
+### Funcionalidades básicas:
 
-1
+1. Cadastrar um Kart
+2. Listar Karts disponíveis
+3. Listar Karts locados
+4. Alugar um Kart
+5. Devolver um Kart
+6. Kart que mais gerou ganhos
+7. Receita e lucro do dia, considerando karts locados
+8. Locação de circuito
+9. Atualizar dia
+10. Sair do programa
 
 ## Quem somos?
 
