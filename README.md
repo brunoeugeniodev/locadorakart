@@ -1,4 +1,6 @@
-# Projeto: Locadora de Kart
+# Projeto da Star Development: Locadora Racing Kart Brasil
+
+![Alt ou título da imagem](URL da imagem)
 
 ## Por que do projeto?
 
