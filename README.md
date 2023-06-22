@@ -1,6 +1,6 @@
 # Locadora Racing Kart Brasil 🚙🏁
 
-(https://th.bing.com/th/id/OIP.egJsRDKEQN56kEzuCvDqIQHaE7?pid=ImgDet&rs=1) 
+![](https://th.bing.com/th/id/OIP.egJsRDKEQN56kEzuCvDqIQHaE7?pid=ImgDet&rs=1) 
 
 ## Por que do projeto?
 
