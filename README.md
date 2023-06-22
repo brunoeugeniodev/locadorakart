@@ -1,4 +1,4 @@
-# Projeto da Star Development: Locadora Racing Kart Brasil :checkered_flag
+# Projeto da Star Development: Locadora Racing Kart Brasil 🚙🏁
 
 ## Por que do projeto?
 
