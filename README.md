@@ -1,6 +1,7 @@
 # Projeto da Star Development: Locadora Racing Kart Brasil
 
-![Alt ou título da imagem](https://wallpapercave.com/wp/wp8883348.jpg)
+![Alt ou título da imagem](![Uploading image.png…]()
+)
 
 ## Por que do projeto?
 
