@@ -1,8 +1,8 @@
 Algoritmo "PROGRAMA DA EMPRESA STAR DEVELOPMENT "
-// Disciplina   : [INTRODU«√O AOS ALGORITMOS]
+// Disciplina   : [INTRODU√á√ÉO AOS ALGORITMOS]
 // Professor   : Gilberto
-// DescriÁ„o   :  Programa para uma locadora de kart
-// Autores    : Bruno EugÍnio Santos, Laila Leal, Lindomar Silva J˙nior, Lucas Samuel Dias e Natalia Salete Rodrigues.
+// Descri√ß√£o   :  Programa para uma locadora de kart
+// Autores    : Bruno Eug√™nio Santos, Laila Leal, Lindomar Silva J√∫nior, Lucas Samuel Dias e Natalia Salete Rodrigues.
 // Data atual  : 22/06/2023
 
 // EMPRESA STAR DEVELOPMENT
@@ -20,7 +20,7 @@ Var
 
 
 Funcao menu:inteiro
-//FunÁ„o emite o menu e busca todos os dados dentro dele.
+//Fun√ß√£o emite o menu e busca todos os dados dentro dele.
 Var
    res,opcao:inteiro
    resc:caractere
@@ -31,17 +31,17 @@ Inicio
       escreval("      MENU LOCADORA: ")
       escreval
       escreval("1. Cadastrar um Kart")
-      escreval("2. Listar Karts disponÌveis")
+      escreval("2. Listar Karts dispon√≠veis")
       escreval("3. Listar Karts locados")
       escreval("4. Alugar um Kart")
       escreval("5. Devolver um Kart")
       escreval("6. Kart que mais gerou ganhos")
       escreval("7. Receita e lucro do dia, considerando Karts locados")
-      escreval("8. LocaÁ„o de circuito")
+      escreval("8. Loca√ß√£o de circuito")
       escreval("9. Atualizar dia")
       escreval("10. Sair do programa")
       escreval("")
-      escreval("Escolha o n˙mero correspondente ‡ uma das opÁıes listadas acima: ")
+      escreval("Escolha o n√∫mero correspondente √† uma das op√ß√µes listadas acima: ")
       escreval("")
       leia(opcao)
       escolha(opcao)
@@ -71,15 +71,15 @@ Inicio
 Fimfuncao
 
 Funcao cadastro:inteiro
-//Essa funÁ„o far· o cadastro de todos os karts lendo: o modelo, valor de locaÁ„o e status de locaÁ„o do Kart.
+//Essa fun√ß√£o far√° o cadastro de todos os karts lendo: o modelo, valor de loca√ß√£o e status de loca√ß√£o do Kart.
 
 Var
    aluguel, cont:inteiro
 Inicio
-   escreval("O n˙mero m·ximo de Karts que podem ser CADASTRADOS s„o 15.")
+   escreval("O n√∫mero m√°ximo de Karts que podem ser CADASTRADOS s√£o 15.")
    escreval("")
    repita
-      escreval("Quantos Karts vocÍ deseja cadastrar? ")
+      escreval("Quantos Karts voc√™ deseja cadastrar? ")
       leia(quantidade)
    ate (quantidade > 0) e (quantidade < 16)
    repita
@@ -89,12 +89,12 @@ Inicio
             leia(modelo[i])
          fimenquanto
          repita
-            escreval("Qual o valor de locaÁ„o?")
+            escreval("Qual o valor de loca√ß√£o?")
             leia(valorLoc[i])
          ate (valorLoc[i] > 0)
          repita
-            escreval("Este Kart j· est· alugado?")
-            escreval(" 1.N„o")
+            escreval("Este Kart j√° est√° alugado?")
+            escreval(" 1.N√£o")
             escreval(" 2.Sim")
             leia(locado[i])
          ate (locado[i] = 1) ou (locado[i]= 2)
@@ -113,14 +113,14 @@ Inicio
 
       senao
          escreval("")
-         escreva("Quantidade m·xima de Karts j· cadastrados!")
+         escreva("Quantidade m√°xima de Karts j√° cadastrados!")
       fimse
    ate (cont = quantidade) ou (conttotal = 15)
 
 FimFuncao
 
 Funcao kartDis:caractere
-//FunÁ„o para verificar quais karts est„o disponÌveis.
+//Fun√ß√£o para verificar quais karts est√£o dispon√≠veis.
 Var
    i:inteiro
    verifica:inteiro
@@ -134,25 +134,25 @@ Inicio
    se (verifica = 1)entao
       escreval("------------------------------------------------------------")
       escreval("")
-      escreval("Lista de Karts disponÌveis: ")
+      escreval("Lista de Karts dispon√≠veis: ")
       escreval("")
       para i de 0 ate 14 passo 1 faca
          se(locado[i] = 1)entao
             escreval(i + 1 ," -Kart modelo: ",modelo[i],".")
-            escreval("Valor de locaÁ„o: ",valorLoc[i]," reais.")
-            escreval("J· foi locado: ",quantLoc[i]," vezes.")
+            escreval("Valor de loca√ß√£o: ",valorLoc[i]," reais.")
+            escreval("J√° foi locado: ",quantLoc[i]," vezes.")
             escreval("----------------------------")
          fimse
       fimpara
    senao
       escreval("")
-      escreval("N„o h· Karts disponÌveis!")
+      escreval("N√£o h√° Karts dispon√≠veis!")
    fimse
 
 Fimfuncao
 
 Funcao kartInd:caractere
-//FunÁ„o para verificar quais karts est„o indisponÌveis.
+//Fun√ß√£o para verificar quais karts est√£o indispon√≠veis.
 
 Var
    i:inteiro
@@ -177,12 +177,12 @@ Inicio
       fimpara
    senao
       escreval("")
-      escreval("N„o h· Karts locados!")
+      escreval("N√£o h√° Karts locados!")
    fimse
 Fimfuncao
 
 procedimento verificacaoL(i:inteiro)
-//Procedimento para verificar o valor de i na funÁ„o de aluguel caso seja menor que 0, maior que 14 ou existente no vetor.
+//Procedimento para verificar o valor de i na fun√ß√£o de aluguel caso seja menor que 0, maior que 14 ou existente no vetor.
 var
    res:inteiro
 inicio
@@ -201,7 +201,7 @@ inicio
                   naoLocado[i] <- 2
                   quantLoc[i] <- quantLoc[i] + 1
                   posi[i] <- -2
-                  escreval("ParabÈns! VocÍ alugou o Kart modelo: ", modelo[i])
+                  escreval("Parab√©ns! Voc√™ alugou o Kart modelo: ", modelo[i])
                fimse
             fimse
          fimse
@@ -211,7 +211,7 @@ fimprocedimento
 
 
 Funcao aluguel:inteiro
-//FunÁ„o que chama e apresenta os karts disponÌveis chamando a funÁ„o kartDis permitindo ao usu·rio alugar algum dos karts.
+//Fun√ß√£o que chama e apresenta os karts dispon√≠veis chamando a fun√ß√£o kartDis permitindo ao usu√°rio alugar algum dos karts.
 Var
    i,verifica,res:inteiro
 Inicio
@@ -223,7 +223,7 @@ Inicio
    se (verifica = 1) entao
       escreval("------------------------------------------------------------")
       escreval("")
-      escreval("Escolha algum Kart da lista dos Karts disponÌveis:")
+      escreval("Escolha algum Kart da lista dos Karts dispon√≠veis:")
       escreval("")
       escreval(kartDis)
       leia(i)
@@ -231,13 +231,13 @@ Inicio
       verificacaoL(i)
    senao
       escreval("")
-      escreval("N„o h· Karts disponÌveis para alugar!")
+      escreval("N√£o h√° Karts dispon√≠veis para alugar!")
       escreval("")
    fimse
 Fimfuncao
 
 procedimento verificacaoD(i:inteiro)
-//Procedimento verifica o valor de i na funÁ„o de devoluÁ„o caso seja menor que 0, maior que 14 ou existente no vetor.
+//Procedimento verifica o valor de i na fun√ß√£o de devolu√ß√£o caso seja menor que 0, maior que 14 ou existente no vetor.
 var
    res:inteiro
 inicio
@@ -265,7 +265,7 @@ inicio
 fimprocedimento
 
 funcao devolucao: inteiro
-//FunÁ„o que recebe a funÁ„o karts indisponÌveis ou seja alugados fazendo com que o usu·rio selecione algum dos karts para devolver.
+//Fun√ß√£o que recebe a fun√ß√£o karts indispon√≠veis ou seja alugados fazendo com que o usu√°rio selecione algum dos karts para devolver.
 
 Var
    i,verifica1, res:inteiro
@@ -279,20 +279,20 @@ Inicio
       escreval("")
       escreval("------------------------------------------------------------")
       escreval("")
-      escreval("Qual o n˙mero do Kart que deseja devolver?")
+      escreval("Qual o n√∫mero do Kart que deseja devolver?")
       escreval(kartInd)
       leia(i)
       i <- i - 1
       verificacaoD(i)
    senao
       escreval("")
-      escreval("N„o h· Karts indisponÌveis para devolver!")
+      escreval("N√£o h√° Karts indispon√≠veis para devolver!")
       escreval("")
    fimse
 fimfuncao
 
 Funcao ganhos:inteiro
-//A funÁ„o ganhos mostra o modelo, valor, quantidade e ganho que o kart mais lucrativo gerou.
+//A fun√ß√£o ganhos mostra o modelo, valor, quantidade e ganho que o kart mais lucrativo gerou.
 Var
    i, posicao,verifica:inteiro
    ganho:real
@@ -326,7 +326,7 @@ Inicio
 Fimfuncao
 
 Funcao receitaeLucro:real
-//FunÁ„o que exibe a receita e o lucro tanto dos karts quanto do circuito.
+//Fun√ß√£o que exibe a receita e o lucro tanto dos karts quanto do circuito.
 Var
    i:inteiro
    multiplicacao,luc, total, Lcircuito, Rcircuito, soma:real
@@ -345,20 +345,20 @@ Inicio
    se (total = 0)entao
       escreval("------------------------------------------------------------")
       escreval("")
-      escreval("No momento o dia n„o gerou receita e nem lucro! ")
+      escreval("No momento o dia n√£o gerou receita e nem lucro! ")
    senao
       escreval("------------------------------------------------------------")
       escreval("")
-      escreval("O valor da receita È de:",total," reais.")
+      escreval("O valor da receita √© de:",total," reais.")
       escreval("")
-      escreval("O lucro do dia È de:",luc," reais.")
+      escreval("O lucro do dia √© de:",luc," reais.")
       escreval("")
       escreval("------------------------------------------------------------")
    fimse
 Fimfuncao
 
 Funcao pista: real
-//FunÁ„o que pergunta ao usu·rio se ele quer ou n„o locar o circuito.
+//Fun√ß√£o que pergunta ao usu√°rio se ele quer ou n√£o locar o circuito.
 Var
    esc,cc: inteiro
 
@@ -367,7 +367,7 @@ Inicio
    se (vp <> 0) entao
       escreval("------------------------------------------------------------")
       escreval("")
-      escreval("CIRCUITO J¡ CADASTRADO!")
+      escreval("CIRCUITO J√Å CADASTRADO!")
       escreval("")
    senao
       repita
@@ -379,8 +379,8 @@ Inicio
    fimse
    se (locacaoDeCircuito[0] = 1) entao
       repita
-         escreval("O circuito j· est· locado, desej· deslocar?")
-         escreval("1-N„o")
+         escreval("O circuito j√° est√° locado, desej√° deslocar?")
+         escreval("1-N√£o")
          escreval("2-Sim")
          leia(esc)
       ate (esc = 1) ou (esc = 2)
@@ -399,7 +399,7 @@ Inicio
    senao
       repita
          escreval("Deseja alugar o circuito? ")
-         escreval(" 1-N„o")
+         escreval(" 1-N√£o")
          escreval(" 2-Sim")
          leia(cc)
       ate (cc = 1) ou (cc = 2)
@@ -412,7 +412,7 @@ Inicio
       fimse
       se cc = 1 entao
          locacaoDeCircuito[0] <- 0
-         escreval("Circuito n„o locado.")
+         escreval("Circuito n√£o locado.")
          escreval("------------------------------------------------------------")
       fimse
 
@@ -420,7 +420,7 @@ Inicio
 Fimfuncao
 
 funcao atualiza:inteiro
-//FunÁ„o que atualiza os dados dos dias e cobra os karts que o usu·rio deseja que permaneÁam locados.
+//Fun√ß√£o que atualiza os dados dos dias e cobra os karts que o usu√°rio deseja que permane√ßam locados.
 Var
    i,continua,verifica1,resposta,res,opc:inteiro
 Inicio
@@ -429,7 +429,7 @@ Inicio
       repita
          escreval("Deseja deslocar o circuito? Caso queira atualizar o dia com o circuito deslocado. ")
          escreval("1-Sim")
-         escreval("2-N„o")
+         escreval("2-N√£o")
          leia(opc)
       ate (opc = 1) ou (opc = 2)
       se (opc = 1) entao
@@ -450,8 +450,8 @@ Inicio
    fimpara
    se (verifica1 = 1) entao
       repita
-         escreval("Deseja manter todos os Karts que est„o locados ?")
-         escreval(" 1-N„o")
+         escreval("Deseja manter todos os Karts que est√£o locados ?")
+         escreval(" 1-N√£o")
          escreval(" 2-Sim")
          leia(resposta)
       ate (resposta = 1) ou (resposta = 2)
@@ -459,8 +459,8 @@ Inicio
          res <- devolucao
          repita
             repita
-               escreval("Deseja continuar selecionando Karts para devoluÁ„o ?")
-               escreval(" 1-N„o")
+               escreval("Deseja continuar selecionando Karts para devolu√ß√£o ?")
+               escreval(" 1-N√£o")
                escreval(" 2-Sim")
                leia(continua)
             ate (continua = 1) ou  (continua = 2)
