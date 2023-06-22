@@ -8,7 +8,7 @@ O projeto da foi desenvolvido visando suprir as necessidades processuais da maio
 
 Após alguns meses da implementação do projeto, realizamos uma reunião om os presidentes da Racing Kart, na qual um deles enfatizou:>Vocês foram uma estrela que brilharam no fim do túnel depois de tanto prejuízo com os sistemas falhos anteriores!
 
-Para visualizar uma parte do código-fonte do programa em questão, sem interface gráfica, clique no link a seguir:
+Para visualizar uma parte do código-fonte do programa em questão, sem interface gráfica, clique no link a seguir: ()
 
 ### Funcionalidades básicas:
 
