@@ -1,5 +1,7 @@
 # Locadora Racing Kart Brasil 🚙🏁
 
+(https://th.bing.com/th/id/OIP.egJsRDKEQN56kEzuCvDqIQHaE7?pid=ImgDet&rs=1) 
+
 ## Por que do projeto?
 
 O projeto da foi desenvolvido visando suprir as necessidades processuais da maior locadora de kart do Brasil: a **Racing Kart Brasil**, a qual vinha relatando que os sistemas utilizados anteriormente, desenvolvidos por outras empresas, não eram eficientes, fáceis e intuitivos. Assim sendo, nós, da **Star Development**, fomos chamados não somente para suprir tais expectativas quebradas pelas outras desenvolvedoras, mas também para superá-las.
