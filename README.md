@@ -9,6 +9,7 @@ Após alguns meses da implementação do projeto, realizamos uma reunião om os 
 ## O que é o projeto?
 
 Este projeto trata-se do cadastramento e locação de karts de corrida.
+Clique a seguir para acessar o código-fonte: (www.youtube.com)
 
 ## Quem somos?
 
