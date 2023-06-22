@@ -2,7 +2,7 @@
 
 ![alt text](https://th.bing.com/th/id/OIP.egJsRDKEQN56kEzuCvDqIQHaE7?pid=ImgDet&rs=1)
 
-## Por que do projeto ❔❕
+## Por que do projeto❔
 
 O projeto da foi desenvolvido visando suprir as necessidades processuais da maior locadora de kart do Brasil: a **Racing Kart Brasil**, a qual vinha relatando que os sistemas utilizados anteriormente, desenvolvidos por outras empresas, não eram eficientes, fáceis e intuitivos. Assim sendo, nós, da **Star Development**, fomos chamados não somente para suprir tais expectativas quebradas pelas outras desenvolvedoras, mas também para superá-las.
 
@@ -10,7 +10,7 @@ Após alguns meses da implementação do projeto, realizamos uma reunião com os
 
 Para visualizar uma parte do código-fonte do programa em questão, sem interface gráfica — por quesitos de segurança —, clique no link a seguir: ()
 
-### Funcionalidades básicas da Locadora Racing Kart Brasil:
+### Funcionalidades básicas da Locadora Racing Kart Brasil 👇
 
 1. Cadastrar um Kart
 2. Listar Karts disponíveis
