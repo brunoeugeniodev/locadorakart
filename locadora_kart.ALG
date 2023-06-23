@@ -436,7 +436,7 @@ Inicio
          locacaoDeCircuito[0] <- 0
          contador <- 0
       senao
-         locacaoDeCircuito[0] = 1
+         locacaoDeCircuito[0] <- 1
          contador <- 0
       fimse
    senao
